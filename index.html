@@ -110,7 +110,7 @@ class:center, middle
 + Describe spatial data formats and sources of spatial data
 --
 
-+ Apply concepts of spatial analysis using NYC Open Data to answer an NYC-related problem
++ Apply concepts of spatial analysis using Parks Data to answer an Parks-related problem
 --
 
 + Discuss resources for further information and instruction on QGIS and other spatial analysis tools
@@ -281,19 +281,6 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-#QGIS - The Bug-y
---
-
-+ Sometimes things get jumbled -> zoom out then zoom back in
---
-
-+ Things don't work properly -> close and restart
---
-
-+ Other problems that we'll find in class
-
----
-
 <!-- opening shapefile -->
 #Let's Get Started
 1. [Click this link](data/boros/boros.zip) and download the file to your desktop
@@ -402,15 +389,6 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-class: center, middle
-#15 Min Break
-
-![img-center-50](images/sadtopographies/disappointment_cove.png)
-
-#####Source: https://www.instagram.com/sadtopographies/
-
----
-
 #Layers
 ![img-full](images/map1.png)
 ####Image Source: http://www.geocontrolling.com/co-je-gis.htm
@@ -496,20 +474,16 @@ class: center, middle
 
 class:center,middle
 #Let's add another layer
+#[TODO: add layer from database]
 
 ---
 
-#311 DOT Service Requests
-+ [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
-+ Unzip the file
-+ Open in QGIS
+class: center, middle
+#15 Min Break
 
-![img-center-60](images/DOT_311_1.png)
----
+![img-center-50](images/sadtopographies/disappointment_cove.png)
 
-#311 DOT Service Requests
-
-![img-full](images/DOT_311_2.png)
+#####Source: https://www.instagram.com/sadtopographies/
 
 ---
         
@@ -540,6 +514,17 @@ class:center,middle
 
 #Filter and Query
 ![img-center-60](images/filter1.png)
+
+---
+
+# Does this look familar?
+
+```
+"Complaint" = 'Broken Muni Meter'
+```
+--
+
+## It's very similar to the format for an SQL `WHERE`
 
 ---
 
@@ -628,48 +613,6 @@ class:center,middle
 
 ---
 
-#Let's add another layer
-+ [Right click this link](data/Parking_Facilities.csv)
-+ Select "Save link as" 
-+ Save the file (`Parking_Facilities.csv`) to your desktop
-
----
-
-#What is a CSV file?
---
-
-![img](images/csv1.png)
-
----
-
-#What is a CSV file?
-![img-full](images/csv2.png)
-
----
-
-#Adding CSV Data
-![img](images/add_csv1.png)
-
----
-
-![img-center-60](images/add_csv2_box.png)
-
---
-
-![img-center-55](images/add_csv3.png)
-
----
-
-#Adding CSV Data
-![img](images/add_csv4_box.png)
-
----
-
-#Adding CSV Data
-![img](images/add_csv5.png)
-
----
-
 class:center,middle
 #So what is a Coordinate Reference System?
 
@@ -685,12 +628,6 @@ class:center,middle
 --
 
 + Convert points on the 3-dimensional Earth (**latitude** and **longitude**) to x and y coordinates on a 2-dimensional map
-
---
-
-![img-center-85](images/projections-orange.jpg)
-
-[Digital Coast Geozone](https://geozoneblog.wordpress.com/2012/05/22/happy-birthday-mercator/)
 
 ---
 
@@ -775,28 +712,6 @@ class:center,middle
 
 ---
 
-class:center,middle
-#Back to Adding CSV Data
-
----
-
-#Adding CSV Data
-![img-center-55](images/add_csv6_box.png)
-
----
-
-#Adding CSV Data
-![img-center-70](images/add_csv7.png)
-
----
-
-#Saving CSV Data as a Shapefile
-![img-left-35](images/save_csv_asSHP1.png)
---
-![img-right-60](images/save_csv_asSHP2.png)
-
----
-
 #Selecting Points
 ![img-center-70](images/select1.png)
 
@@ -843,6 +758,57 @@ class:center,middle
 --
 
 + Pick the new projection in the CRS field (like when we imported the CSV)
+
+---
+
+class:center,middle
+# Now that you know how to work with QGIS, what questions would you like to answer?
+
+---
+
+class:center,middle
+# [TODO: present list of spatial datasets that could be used]
+
+---
+
+# Generating Ideas
+![img-center-30](images/ideate_discuss_decide_crop.png)
+
+---
+
+name:brainstorm
+
+# What would you like to try to answer using QGIS using data in the database?
+
+![img-right-30](images/ideate.png)
++ **Ideate** - On your own, generate at least 3 ideas (ideally more) on Post-Its
+
+???
++ Facilitator gives people 3-5 minutes to write ideas on post-its
+
+---
+
+# What would you like to try to answer using QGIS using data in the database?
+![img-right-30](images/discuss.png)
++ **Ideate** - On your own, generate at least 3 ideas (ideally more) on Post-Its
++ **Discuss** - Review the ideas you came up with at your table
+
+???
++ Facilitator gives tables five minutes to talk over their ideas with each other
++ No consensus needed here, this is time to polish and consider topics with an audience
+
+---
+
+# What would you like to try to answer using QGIS using data in the database?
+![img-right-30](images/ideate_discuss_decide_crop.png)
++ **Ideate** - On your own, generate at least 3 ideas (ideally more) on Post-Its
++ **Discuss** - Review the ideas you came up with at your table
++ **Decide** - We will come to a consensus as a group
+
+???
++ Facilitator takes ideas from individuals and groups them into common themes
++ Work toward groups of three or four people based on topic, not necessarily by table
++ These groups will work on projects together
 
 ---
 
@@ -894,149 +860,16 @@ class:center,middle
 #Goals for the Afternoon
 --
 
-+ Add reference data to our maps
---
-
 + Learn how to join features in QGIS
 --
 
-+ Create printable maps in QGIS
++ Work on a question you want to answer with QGIS
+--
+
++ Create printable maps in QGIS, including basemaps
 --
 
 + Share resources for further learning
-
----
-
-class:center,middle
-#What have our maps been lacking?
-
----
-
-#Base Maps
-![img-full](images/map1.png)
-####Image Source: http://www.geocontrolling.com/co-je-gis.htm
----
-
-#Base Maps
-![img-center-80](images/basemap1.png)
-
----
-
-#Base Maps
---
-       
-+ Adding base maps will give your map context
---
-
-+ In QGIS, you need a plugin to use base maps
---
-
-+ There are several, but we're only going to use one of them
-
----
-
-#Base Map Plugin
-+ From the Plugins menu, select "Manage and Install Plugins"
-
-![img-center-60](images/basemap2.png)
-
----
-
-#Base Map Plugin
-
-+ Search for the QuickMapServices plugin and install it
-
-![img-center-75](images/basemap3_box.png)
-
----
-
-#Setting Up QuickMapServices Plugin
-+ Go to the Settings Menu
-![img-center-80](images/basemap4.png)
-
----
-
-#Setting Up QuickMapServices Plugin
-+ Get the contributed packs
-![img-center-80](images/basemap5_box.png)
-
----
-
-#Setting Up QuickMapServices Plugin
-+ Revel in all the beautiful base maps
-![img-right-30](images/basemap6.png)
-
----
-
-#Choosing a Base Map
---
-
-+ Think about what someone reading your map needs to see for context
---
-
-+ Think about how the base map interacts with the data on your map
-
----
-
-#Base Maps - Hierarchy
---
-
-+ If your data is the most important part of the map, make sure it looks more important than the base map
---
-
-+ Avoid base maps that strongly emphasize features that aren't relevant on your map
-
----
-
-#Base Maps - Colors
---
-
-+ Choose base maps with colors that complement the colors on your map
---
-
-+ The contrast between the color on your map and the color on the base map should be enough to make your layers clearly visible
-
----
-
-#Base Maps - Scale
-
-![img-center-55](images/scale.jpg)
-
-####Source: https://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo04.html
-
----
-
-#Base Maps - Scale
-+ Base maps show different levels of detail at different scales
---
-
-+ Make sure the level of detail is appropriate to your map
-
----
-
-# Scale
-
-![img-center-80](images/scale-basemap.png)
-
----
-
-# Scale
-
-![img-center-80](images/scale-basemap-denver.png)
-
----
-
-# Your Turn
-+ Find a good base map for your data
-+ Think about hierarchy, color, and scale
-+ Don't be afraid to play around
-
----
-
-class:center,middle
-#15 Min Break
-![img-center-50](images/sadtopographies/grumpy_lane.jpg)
-####Source: https://www.instagram.com/p/BCbMlYZD89p/
 
 ---
 
@@ -1120,6 +953,34 @@ class:center,middle
 + Count the number of DOT 311 service requests in each [community district](data/nycd_16a/nycd_16a.zip) in your borough
 + Style the community districts by the number of service requests
 
+---
+
+class:center,middle
+# Project time
+
+---
+
+# Project
+
++ Work with the group that you formed before lunch
+--
+
++ Explore the data available in the database to work toward answering your group question
+--
+
++ Don't worry about exporting your map yet, we will talk about cartography and Print Layouts next
+
+???
++ Groups work on their projects together for 45-60 minutes
++ Groups should access data in database to try to answer their questions
++ Facilitators work to keep groups moving toward a mappable solution
+
+---
+
+class:center,middle
+#15 Min Break
+![img-center-50](images/sadtopographies/grumpy_lane.jpg)
+####Source: https://www.instagram.com/p/BCbMlYZD89p/
 
 ---
 
@@ -1198,6 +1059,101 @@ class:center,middle
 
 ---
 
+#Base Maps
+![img-full](images/map1.png)
+####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+---
+
+#Base Maps
+![img-center-80](images/basemap1.png)
+
+---
+
+#Base Maps
+--
+       
++ Adding base maps will give your map context
+--
+
++ In QGIS, you need a plugin to use base maps
+--
+
++ There are several, but we're only going to use one of them
+
+---
+
+#Base Map Plugin
++ From the Plugins menu, select "Manage and Install Plugins"
+
+![img-center-60](images/basemap2.png)
+
+---
+
+#Base Map Plugin
+
++ Search for the QuickMapServices plugin and install it
+
+![img-center-75](images/basemap3_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Go to the Settings Menu
+![img-center-80](images/basemap4.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Get the contributed packs
+![img-center-80](images/basemap5_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Revel in all the beautiful base maps
+![img-right-30](images/basemap6.png)
+
+---
+
+class:center,middle
+# Cartographic principles
+
+---
+
+# Hierarchy
+--
+
++ Make the most important elements of your map look the most important
+--
+
++ Also avoid base maps that strongly emphasize features that aren't relevant on your map
+
+---
+
+# Colors
+--
+
++ Try to use colors to add clarity to your map
+--
+
++ The contrast between different elements on your map should be enough to make each clearly visible
+
+---
+
+# Scale
+
+![img-center-55](images/scale.jpg)
+
+####Source: https://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo04.html
+
+---
+
+# Scale
+
++ Make sure the level of detail is appropriate to your map
+
+---
+
 # Print Layout
 --
 
@@ -1253,6 +1209,19 @@ class:center,middle
 
 # Now you can share your map or print it
 ![img-center-80](images/print_comp11.png)
+
+---
+
+class:center,middle
+# Back to your projects
+
+---
+
+# Your turn&mdash;style and export
+
++ Use the cartographic concepts to style your group's map
++ Create a Print Layout of the map
++ Export the map as a PDF
 
 ---
 
@@ -1369,9 +1338,6 @@ class:center,middle
 + Geocoding
 --
 
-+ Spatial databases
---
-
 + Other spatial data types (KML, GeoJSON, GeoTIFF)
 --
 
@@ -1400,16 +1366,13 @@ class:center,middle
 + Not an enterprise software like ESRI ArcGIS
 --
 
-+ The visual style is a little clunky
---
-
 + Features tend to change between versions (moving around, menu option changes, etc) 
 --
 
 + Major versions tend to have major feature changes
 --
 
-+ Plug-ins tend not to work with newer versions
++ Plug-ins don't always work with newer versions
 --
 
 + And it crashes (as you've probably already experienced)
