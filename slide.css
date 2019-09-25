@@ -48,6 +48,10 @@ img[alt=img-left-40]{
   width:40%;
   float:left;
 }
+img[alt=img-left-43]{
+  width:43%;
+  float:left;
+}
 img[alt=img-left-45]{
   width:45%;
   float:left;
@@ -167,6 +171,9 @@ img[alt=img-center-38]{
 }
 img[alt=img-center-40]{
   width:40%;
+}
+img[alt=img-center-43]{
+  width:43%;
 }
 img[alt=img-center-45]{
   width:45%;
@@ -325,6 +332,7 @@ form{
   color: gray;
   font-size:0.75em;
 }
+
 
 .remark-slide-number {
   font-size:0.75em;
