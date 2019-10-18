@@ -111,7 +111,7 @@ class:center, middle
 + Describe spatial data formats and sources of spatial data
 --
 
-+ Apply concepts of spatial analysis using Parks Data to answer an Parks-related problem
++ Apply concepts of spatial analysis using Parks Data to answer a Parks-related problem
 --
 
 + Discuss resources for further information and instruction on QGIS and other spatial analysis tools
@@ -182,9 +182,18 @@ class:center, middle
 
 ---
 
-![img-center-60](images/qgis_nav3.png)
+# QGIS Getting Started
+![img-center-100](images/qgis-data-source-manager-1.png)
 
-![img-center-70](images/qgis_nav4.png)
+---
+
+# QGIS Getting Started
+![img-center-80](images/qgis-data-source-manager-2.png)
+
+---
+
+# QGIS Getting Started
+![img-center-100](images/qgis-data-source-manager-3.png)
 
 ---
 
@@ -199,6 +208,56 @@ class:center, middle
 
 # Attribute Table
 ![img-center-95](images/qgis-boros-3.png)
+
+---
+
+# Attribute Table
+
++ Each feature has a corresponding row in the attribute table
++ When a feature is selected on the map, that row is selected in the attribute table
++ And vice versa
+
+---
+
+# Data types
+--
+
++ As with databases, columns in the attribute table have data types
+--
+
++ You'll see similar data types as you do in databases
+
+---
+
+# Data types
+--
+
++ integer
+--
+ - a number with no digits after the decimal point, like `5` or `100349`
+--
+
++ real
+--
+ - a number with digits after the decimal point, like `5.01` or `100.349`
+--
+
++ string
+--
+ - text, like `Queens`
+--
+
++ date
+
+---
+
+# When do data types matter?
+--
+
++ When performing calculations&mdash;only numeric (integer or real) columns can be used mathematically
+--
+
++ When styling a layer, some styles require numeric columns
 
 ---
 
@@ -219,16 +278,16 @@ class:center, middle
 ---
 
 # Add labels to data
-+ In the Layer Styling panel select "Labels" -> "Show labels for this layer"
++ In the Layer Styling panel select the Labels tab, "Single labels"
 
-![img-center-100](images/labeling1.png)
+![img-center-80](images/labeling1.png)
 
 ---
 
 # Add labels to data
 + Select the column that has the data you want to use for labels
 
-![img](images/labeling2.png)
+![img-center-80](images/labeling2.png)
 
 ---
 
@@ -272,7 +331,7 @@ class:center,middle
 
 > Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface
 
-+ [National Geographic Education Encyclopedia](http://education.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
++ [National Geographic Education Encyclopedia](https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
 
 ---
 
@@ -306,8 +365,8 @@ class:center,middle
 ---
 
 # Layers
-![img-center-100](images/map1.png)
-####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+![img-center-60](images/gis-layers.jpg)
+####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
 
 ---
 
@@ -447,8 +506,52 @@ class:center,middle
 
 ---
 
-class:center,middle
-# [TODO: guided tutorial loading data from data warehouse]
+# Adding layers from the Data Warehouse
+
+![img-center-50](images/qgis-mssql-2.png)
+
++ Enter `Parks DWH` in the **Connection name** field (this can be whatever you want)
++ Don't enter anything in **Provider/DSN**
++ Enter `data.nycdpr.parks.nycnet` in the **Host** field
+
+---
+
+# Adding layers from the Data Warehouse
+
+![img-center-50](images/qgis-mssql-3.png)
+
++ Click **List Databases**
+
+---
+
+# Adding layers from the Data Warehouse
+
+![img-center-50](images/qgis-mssql-4.png)
+
++ Click **Test Connection**
+
+---
+
+# Why use a database?
+--
+
++ Single source of truth
+--
+
++ Don't have to worry about moving and sharing files
+--
+
++ Can be faster and more consistent than shapefiles and other spatial files
+
+---
+
+#What is a spatial database?
+--
+
++ A database that stores spatial features
+--
+
++ Optimized for processing and querying spatial data, especially location-aware queries
 
 ---
         
@@ -474,7 +577,7 @@ class: center, middle
 
 ![img-center-50](images/sadtopographies/disappointment_cove.png)
 
-##### Source: https://www.instagram.com/sadtopographies/
+#### Source: https://www.instagram.com/sadtopographies/
 
 ---
 
@@ -598,12 +701,30 @@ class:center,middle
 ---
 
 # Exporting Data
-![img-center-70](images/qgis-export-0.png)
+![img-center-80](images/qgis-export-0.png)
 
 ---
 
 # Exporting Data
-![img-center-50](images/qgis-export-1.png)
+![img-center-55](images/qgis-export-1.png)
+
+---
+
+# Exporting Data
+
++ There are many formats you can export to under the **Format** dropdown
+--
+
++ Including Comma Separated Value (CSV) if you want to open the attribute table in a spreadsheet program like Excel
+--
+
++ If you export to CSV, that file will only have the attribute table&mdash;not the geometries
+
+---
+
+# Exporting Data
+
+![img-center-55](images/qgis-csv.png)
 
 ---
 
@@ -636,9 +757,9 @@ class:center,middle
 # Projections
 + Every projection distorts some part of your map
 
-![img-center-50](images/projections-faces.png)
+![img-center-40](images/projections-faces.png)
 
-[Source _Elements of Map Projection With Applications To Map and Chart Construction_ (public domain material)](https://archive.org/stream/cu31924003898271#page/n58/mode/1up)
+####Image Source: [Elements of Map Projection With Applications To Map and Chart Construction (public domain material)](https://archive.org/stream/cu31924003898271#page/n58/mode/1up)
 
 ---
 
@@ -660,32 +781,18 @@ class:center,middle
 
 + These circles are all the same size on the globe
 
-![img-center-50](images/projections-tissot-mercator.png)
+![img-center-50](images/projections-mercator-tissot.svg)
 
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+####Image Source: [Justin Kunimune (CC BY-SA)](https://commons.wikimedia.org/wiki/File:Mercator_with_Tissot%27s_Indicatrices_of_Distortion.svg)
 
 ---
 
 # Projections Matter
 + As are these
 
-![img-center-60](images/projections-tissot-mollweide.png)
+![img-center-80](images/projections-mollweide-tissot.svg)
 
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
-
----
-
-# Projections Matter
-+ And these
-
-![img-center-50](images/projections-tissot-oblique-mercator.png)
-
-[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
-
----
-
-# Projections Matter
-![img-center-100](images/projections.png)
+####Image Source: [Justin Kunimune (CC BY-SA)](https://en.wikipedia.org/wiki/File:Mollweide_with_Tissot%27s_Indicatrices_of_Distortion.svg)
 
 ---
 
@@ -695,9 +802,7 @@ class:center,middle
 --
 
 + In NYC, we use a more accurate projection **NY State Plane/Long Island Zone**
-![img-right-60](images/projections_NYSplane.png)
 
-###### Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
 ---
 
 # Projections
@@ -761,52 +866,11 @@ class:center,middle
 
 + If we wanted to reproject the data into a different CRS, we could do that here
 --
-![img-center-60](images/reproject1.png)
+
+![img-center-80](images/reproject1.png)
 --
 
-+ Pick the new projection in the CRS field (like when we imported the CSV)
-
----
-
-# Data types
---
-
-+ As with databases, columns in the attribute table have data types
---
-
-+ You'll see similar data types as you do in databases
-
----
-
-# Data types
---
-
-+ integer
---
- - a number with no digits after the decimal point, like `5` or `100349`
---
-
-+ real
---
- - a number with digits after the decimal point, like `5.01` or `100.349`
---
-
-+ string
---
- - text, like `Queens`
---
-
-+ date
-
----
-
-# When do data types matter?
---
-
-+ When performing calculations&mdash;only numeric (integer or real) columns can be used mathematically
---
-
-+ When styling a layer, some styles require numeric columns
++ Pick the new projection in the CRS field
 
 ---
 
@@ -815,8 +879,39 @@ class:center,middle
 
 ---
 
-class:center,middle
-# [TODO: present list of spatial datasets that could be used]
+# Some tables we have access to today
+
+## Playgrounds (`TBL_PARKSGIS_PLAYGROUND`)
+
++ Name
++ Borough
++ Category/Subcategory
++ Comfort Station
++ Acres
+
+---
+
+# Some tables we have access to today
+
+## Trees (`TBL_FORMSDB_TREEPOINTS`)
+
++ Genus
++ Stump diameter
++ Risk rating
++ Comfort Station
++ Acres
+
+---
+
+# Some tables we have access to today
+
+## Retaining walls (`TBL_PARKSGIS_RETAININGWALL`)
+
++ Type
++ Length
++ Thickness
++ Criticality
++ Year built
 
 ---
 
@@ -858,6 +953,18 @@ name:brainstorm
 + Facilitator takes ideas from individuals and groups them into common themes
 + Work toward groups of three or four people based on topic, not necessarily by table
 + These groups will work on projects together
+
+---
+
+# Project
+
++ As a group, discuss the data and steps that you will need to undertake to answer your question
+--
+
++ We don't expect you to know how to do each of these steps yet
+--
+
++ Write out a series of steps, and your group will work through them this afternoon
 
 ---
 
@@ -953,34 +1060,34 @@ class:center,middle
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 ![img-center-90](images/qgis-boros-311-1.png)
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 ![img-center-80](images/qgis-boros-311-2.png)
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 
 ![img-center-80](images/qgis-boros-311-3.png)
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 
 ![img-center-90](images/qgis-boros-311-4.png)
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 ![img-center-40](images/qgis-boros-311-5.png)
 
 ---
 
-# Parking facilities by boro
+# 311 requests by boro
 ![img-center-90](images/qgis-boros-311-6.png)
 
 ---
@@ -1002,7 +1109,7 @@ GROUP BY boro
 ---
 
 # Your Turn
-+ Count the number of Parks 311 service requests in each [community district](data/nycd_16a/nycd_16a.zip) in your boro
++ Count the number of Parks 311 service requests in each [community district](data/nycd_19c/nycd_19c.zip) in your boro
 + Style the community districts by the number of service requests
 
 ---
@@ -1020,6 +1127,12 @@ class:center,middle
 + Explore the data available in the database to work toward answering your group question
 --
 
++ Try to follow the workplan you cam up with before lunch
+--
+
++ Document your steps and keep your data organized
+--
+
 + Don't worry about exporting your map yet, we will talk about cartography and Print Layouts next
 
 ???
@@ -1032,7 +1145,7 @@ class:center,middle
 class:center,middle
 #15 Min Break
 ![img-center-50](images/sadtopographies/grumpy_lane.jpg)
-#### Source: https://www.instagram.com/p/BCbMlYZD89p/
+#### Source: https://www.instagram.com/sadtopographies/
 
 ---
 
@@ -1056,7 +1169,7 @@ class:center,middle
 + Include natural and man-made features
 --
 
-+ Usually meant to help aid in the navigation or discovery of locations
++ Usually meant to aid in the navigation or discovery of locations
 --
 
 + Usually fairly simple
@@ -1066,9 +1179,9 @@ class:center,middle
 
 ---
 
-class:center,middle
 ![img-center-90](images/referencemap.png)
-##### Source: http://nationalmap.gov/small_scale/printable/reference.html
+
+#### Image Source: [USGS](http://nationalmap.gov/small_scale/printable/reference.html)
 ---
 
 # Thematic Maps
@@ -1084,15 +1197,15 @@ class:center,middle
 + Spatial features used for reference
 ---
 
-![img-center-100](images/thematic1.png)
-##### Source: http://www.usna.usda.gov/Hardzone/ushzmap.html 
+![img-center-90](images/thematic1.png)
+#### Image Source: [USDA](http://www.usna.usda.gov/Hardzone/ushzmap.html)
 
 ---
 
 # Choropleth
 ![img-center-75](images/choropleth.png)
 
-##### Source: http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping
+#### Image Source: [geogalot](http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping)
 
 ---
 
@@ -1100,25 +1213,25 @@ class:center,middle
 
 ![img-center-90](images/floatingsheep-beer-church.jpg)
 
-##### Source: http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html
+#### Image Source: [floatingsheep](http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html)
 
 ---
 
 # Area Cartogram – Electoral Votes by State
 ![img-center-60](images/Cartogram_US.png)
-##### Source: http://training.fws.gov/courses/csp/csp7203/resources/Types_of_Maps_2013.pdf 
+#### Image Source: [US FWS: Types of Maps](http://training.fws.gov/courses/csp/csp7203/resources/Types_of_Maps_2013.pdf)
 
 ---
 
 # Dorling Cartogram – Obesity by State
 ![img-center-100](images/dorling.png)
-##### Source: http://homes.cs.washington.edu/~jheer//files/zoo/ 
+#### Image Source: [A Tour Through the Visualization Zoo](http://homes.cs.washington.edu/~jheer//files/zoo/)
 
 ---
 
 # Base Maps
-![img-center-100](images/map1.png)
-####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+![img-center-60](images/gis-layers.jpg)
+####Image Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Visual_Representation_of_Themes_in_a_GIS.jpg)
 ---
 
 # Base Maps
@@ -1154,20 +1267,24 @@ class:center,middle
 ---
 
 # Setting Up QuickMapServices Plugin
-+ Go to the Settings Menu
-![img-center-80](images/qgis-qms-0.png)
++ Go to Search QMS
+![img-center-50](images/qgis-qms-0.png)
 
 ---
 
 # Setting Up QuickMapServices Plugin
-+ Get the contributed packs
-![img-center-80](images/qgis-qms-1.png)
+
++ You'll see a search box
+
+![img-center-90](images/qgis-qms-1.png)
 
 ---
 
 # Setting Up QuickMapServices Plugin
-+ Revel in all the beautiful base maps
-![img-center-35](images/qgis-qms-2.png)
+
++ Search for **NYC** to find some City-created base maps
+
+![img-center-90](images/qgis-qms-2.png)
 
 ---
 
@@ -1205,7 +1322,7 @@ class:center,middle
 
 ![img-center-55](images/scale.jpg)
 
-#### Source: https://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo04.html
+#### Image Source: [The Power of Maps and GIS](https://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo04.html)
 
 ---
 
@@ -1273,6 +1390,22 @@ class:center,middle
 
 ---
 
+# Parks has map guidelines
+
+![img-center-80](images/parks-map-guidelines-0.png)
+
+#### Via [NYC Parks Map Guidelines](http://wss.parks.nycnet/gis/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fgis%2FShared%20Documents%2FBranding%20Guidelines&FolderCTID=0x01200011B16AAACFDE434BA7C55644B37D9C82&View=%7BC006B00D%2D3C9A%2D499B%2DAF4B%2DB37AEDF3C79E%7D)
+
+---
+
+# Parks has map guidelines
+
+![img-center-70](images/parks-map-guidelines-1.png)
+
+#### Via [NYC Parks Map Guidelines](http://wss.parks.nycnet/gis/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fgis%2FShared%20Documents%2FBranding%20Guidelines&FolderCTID=0x01200011B16AAACFDE434BA7C55644B37D9C82&View=%7BC006B00D%2D3C9A%2D499B%2DAF4B%2DB37AEDF3C79E%7D)
+
+---
+
 class:center,middle
 # Back to your projects
 
@@ -1326,13 +1459,43 @@ class:center,middle
 #[ArcGIS](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 
 ![img-center-large](images/arcgis.jpg)
-[Source](http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html)
+#### Image Source [Esri](http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html)
+
+---
+
+# ArcGIS
+
++ Parks has a license with Esri, so you can use ArcGIS Desktop and ArcGIS Pro
+
+---
+
+# ArcGIS
+
++ You have access to many training materials at [Esri Academy](https://www.esri.com/training/)
+
+![img-center-80](images/esri-academy-0.png)
+
+---
+
+# ArcGIS
+
++ If the training says "Requires Maintenance", the Parks license covers it
+
+![img-center-70](images/esri-academy-1.png)
+
+---
+
+# ArcGIS
+
++ The Parks license does not cover trainings with dollar amounts next to them
+
+![img-center-70](images/esri-academy-2.png)
 
 ---
 
 #[Adobe Illustrator](http://www.adobe.com/products/illustrator.html)/[Mapublisher](http://www.avenza.com/mapublisher)
 ![img-center-100](images/illustrator.jpg)
-[Source](http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-data-adobe-illustrator-mapublisher)
+#### Image Source: [Avenza](https://www.avenza.com/resources/blog/2014/12/22/using-mapublisher-fme-auto-to-load-raster-layers-into-adobe-illustrator/)
 
 ---
 
@@ -1351,7 +1514,7 @@ class:center,middle
 
 ![img-center-80](https://www.apertus.org/sites/default/files/bart_os.gif)
 
-Source: https://www.apertus.org/opensource <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+#### Image Source: [Apertus (CC BY)](https://www.apertus.org/opensource)
 
 ---
 
@@ -1493,7 +1656,7 @@ exclude:true
 
 exclude:true
 # QGIS - The Bad
-+ Not an enterprise software like ESRI ArcGIS
++ Not an enterprise software like Esri ArcGIS
 + Features tend to change between versions (moving around, menu option changes, etc) 
 + Major versions tend to have major feature changes
 + Plug-ins don't always work with newer versions
@@ -1544,7 +1707,7 @@ class:center,middle
 
 ---
 
-# Other Documentation
+# Resources
 --
 
 + [QGIS online manual Gentle GIS Introduction](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/)
@@ -1557,11 +1720,30 @@ class:center,middle
 --
 
 + [Eric's YouTube channel](https://www.youtube.com/channel/UCsmBq4ziqRgBZSJK8sGF0Fg)
+--
+
++ [Copy of today's handout](workbook.pdf)
+--
+
++ [Datapolitan training classes](http://training.datapolitan.com/)
 
 ---
 
 class:middle
 ![img-center-70](images/google.png)
+
+---
+
+# NYC Parks GIS Resources
+--
+
++ [Branding guidelines and map templates](http://wss.parks.nycnet/gis/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fgis%2FShared%20Documents%2FBranding%20Guidelines&FolderCTID=0x01200011B16AAACFDE434BA7C55644B37D9C82&View=%7BC006B00D%2D3C9A%2D499B%2DAF4B%2DB37AEDF3C79E%7D)
+--
+
++ [data.parks sharepoint](http://wss.parks.nycnet/data.parks/SitePages/Home.aspx)
+--
+
++ Contact [Ben Blackshear](mailto:Benjamin.Blackshear@parks.nyc.gov) and [Peter Carlo](mailto:peter.carlo@parks.nyc.gov) for Esri and Illustrator support
 
 ---
 
@@ -1581,6 +1763,9 @@ class:middle
 --
 
 + Choose good file names
+--
+
++ Use the Data Warehouse when you can
 
 ---
 
@@ -1600,12 +1785,6 @@ class:middle
 --
 
 + Share what you know with others -> Data wants to be mapped
-
----
-
-class:center,middle
-# Thank You
-## [Please take a moment to share your thoughts on this class](http://goo.gl/forms/N8j5imC8ww)
 
 ---
 
@@ -1633,6 +1812,15 @@ class:center,middle
         Twitter: <a href="https://twitter.com/datapolitan">@datapolitan</a>
     </li>
 </ul>
+
+---
+
+class:center,middle
+# THANK YOU!
+
+# Please take a moment to <br><a href="https://docs.google.com/forms/d/e/1FAIpQLScqxFDbN09n67Od5Cj5hIWatMIwnqBoQhLzTnMn4JT5hcLSBw/viewform?usp=sf_link" target="_blank">provide your feedback on class today</a>
+
+## And checkout [the dashboard of your responses](https://datastudio.google.com/s/kSGuvoygzjg)
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
