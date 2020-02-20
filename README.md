@@ -36,44 +36,44 @@ Employees of all levels of responsibility with a command of Microsoft Excel and 
 
 ## Outline
 
-+ Introduction and Housekeeping (Richard)
-+ Getting Started (Eric)
++ Introduction and Housekeeping (Eric)
++ Getting Started (Manon)
     + Opening QGIS
     + Adding shapefiles to QGIS
-+ Data types (Eric)
++ Data types (Manon)
     + The attribute table
-+ Styling Features (Eric)
++ Styling Features (Manon)
     + Opening the Layer Styling panel
     + Basic styles
     + Labels
-+ Your turn 1 (Eric)
-+ What did we just do? (Richard)
-+ GIS Overview (Richard)
++ Your turn 1 (Manon)
++ What did we just do? (Eric)
++ GIS Overview (Eric)
     + GIS definitions
     + Layers
     + Vector data
-+ Shapefiles (Richard)
++ Shapefiles (Eric)
     + What makes up a shapefile?
     + Limitations
-+ Adding Second Layer (Richard)
++ Adding Second Layer (Eric)
     + Add data using the Data Warehouse
     + What is the difference between a shapefile and a database layer?
-+ Why use a database? (Richard)
++ Why use a database? (Eric)
     + What is a spatial database?
-+ Layer ordering
++ Layer ordering (Eric)
 + Break
-+ 5 Data Analytics Tasks (Richard)
-+ Filtering (Richard)
++ 5 Data Analytics Tasks (Manon)
++ Filtering (Manon)
     + Download Parks 311 data 
     + Filter by complaint type
     + Filter by complaint type and borough
-+ Zoom/Pan (Richard)
++ Zoom/Pan (Manon)
     + Zoom tools
     + Pan tool
-+ Exporting Data (Richard)
++ Exporting Data (Manon)
     + Exporting shapefile
     + Exporting CSV
-+ Your Turn 2 (Richard)
++ Your Turn 2 (Manon)
 + Projections (Eric)
     + Basic definition
     + Mercator
@@ -83,39 +83,39 @@ Employees of all levels of responsibility with a command of Microsoft Excel and 
     + Identifying points
     + Select by drawing
     + Export selected features
-+ Project Ideation (Richard)
-    + Example tables
++ Project Ideation (Manon)
+    + Example database tables
     + Generate ideas
     + Create groups based on the ideas
-+ Process Mapping (Richard)
++ Process Mapping (Manon)
     + Give groups a chance to write out a possible process
-+ B Block Wrapup (Richard)
++ B Block Wrapup (Manon)
 + Lunch
-+ C Block Intro (Richard)
-+ Proxy Setup (Eric)
++ C Block Intro (Manon)
++ Proxy Setup (Manon)
 + Basic Spatial Joins (Eric)
     + What joins could we do?
     + Count 311 requests by borough
     + Graduated style for a choropleth
 + Your turn 3 (Eric)
-+ Project Work (Richard)
++ Project Work (Manon)
 + Break
-+ Overview of Maps (Richard)
++ Overview of Maps (Eric)
     + General reference, thematic, cartogram
-+ Base Maps (Richard)
++ Base Maps (Eric)
     + QuickMapServices
     + Parks Basemap
-+ Cartographic principles (Eric)
++ Cartographic principles (Manon)
     + Hierarchy
     + Colors
     + Scale
-+ Print Layout (Eric)
++ Print Layout (Manon)
     + Add map
     + Add title
     + Add legend
     + Export to PDF
     + Mention Parks maps guidelines
-+ Project Work/Presentations (Richard/Eric)
++ Project Work/Presentations (Manon/Eric)
 + Class Wrap-Up (Eric)
 
 ## Exercise Descriptions
