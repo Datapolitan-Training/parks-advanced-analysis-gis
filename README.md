@@ -38,83 +38,83 @@ Employees of all levels of responsibility with a command of Microsoft Excel and 
 
 + Introduction and Housekeeping (Richard)
 + Getting Started (Eric)
- + Opening QGIS
- + Adding shapefiles to QGIS
+    + Opening QGIS
+    + Adding shapefiles to QGIS
 + Data types (Eric)
- + The attribute table
+    + The attribute table
 + Styling Features (Eric)
- + Opening the Layer Styling panel
- + Basic styles
- + Labels
+    + Opening the Layer Styling panel
+    + Basic styles
+    + Labels
 + Your turn 1 (Eric)
 + What did we just do? (Richard)
 + GIS Overview (Richard)
- + GIS definitions
- + Layers
- + Vector data
+    + GIS definitions
+    + Layers
+    + Vector data
 + Shapefiles (Richard)
- + What makes up a shapefile?
- + Limitations
+    + What makes up a shapefile?
+    + Limitations
 + Adding Second Layer (Richard)
- + Add data using the Data Warehouse
- + What is the difference between a shapefile and a database layer?
+    + Add data using the Data Warehouse
+    + What is the difference between a shapefile and a database layer?
 + Why use a database? (Richard)
- + What is a spatial database?
+    + What is a spatial database?
 + Layer ordering
 + Break
 + 5 Data Analytics Tasks (Richard)
 + Filtering (Richard)
- + Download Parks 311 data 
- + Filter by complaint type
- + Filter by complaint type and borough
+    + Download Parks 311 data 
+    + Filter by complaint type
+    + Filter by complaint type and borough
 + Zoom/Pan (Richard)
- + Zoom tools
- + Pan tool
+    + Zoom tools
+    + Pan tool
 + Exporting Data (Richard)
- + Exporting shapefile
- + Exporting CSV
+    + Exporting shapefile
+    + Exporting CSV
 + Your Turn 2 (Richard)
 + Projections (Eric)
- + Basic definition
- + Mercator
- + Projection distortions
- + Remember: 4326 and 2263
+    + Basic definition
+    + Mercator
+    + Projection distortions
+    + Remember: 4326 and 2263
 + Identifying and Selecting Points (Eric)
- + Identifying points
- + Select by drawing
- + Export selected features
+    + Identifying points
+    + Select by drawing
+    + Export selected features
 + Project Ideation (Richard)
- + Example tables
- + Generate ideas
- + Create groups based on the ideas
+    + Example tables
+    + Generate ideas
+    + Create groups based on the ideas
 + Process Mapping (Richard)
- + Give groups a chance to write out a possible process
+    + Give groups a chance to write out a possible process
 + B Block Wrapup (Richard)
 + Lunch
 + C Block Intro (Richard)
 + Proxy Setup (Eric)
 + Basic Spatial Joins (Eric)
- + What joins could we do?
- + Count 311 requests by borough
- + Graduated style for a choropleth
+    + What joins could we do?
+    + Count 311 requests by borough
+    + Graduated style for a choropleth
 + Your turn 3 (Eric)
 + Project Work (Richard)
 + Break
 + Overview of Maps (Richard)
- + General reference, thematic, cartogram
+    + General reference, thematic, cartogram
 + Base Maps (Richard)
- + QuickMapServices
- + Parks Basemap
+    + QuickMapServices
+    + Parks Basemap
 + Cartographic principles (Eric)
- + Hierarchy
- + Colors
- + Scale
+    + Hierarchy
+    + Colors
+    + Scale
 + Print Layout (Eric)
- + Add map
- + Add title
- + Add legend
- + Export to PDF
- + Mention Parks maps guidelines
+    + Add map
+    + Add title
+    + Add legend
+    + Export to PDF
+    + Mention Parks maps guidelines
 + Project Work/Presentations (Richard/Eric)
 + Class Wrap-Up (Eric)
 
