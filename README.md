@@ -92,7 +92,7 @@ Employees of all levels of responsibility with a command of Microsoft Excel and 
 + B Block Wrapup (Manon)
 + Lunch
 + C Block Intro (Manon)
-+ Proxy Setup (Manon)
++ Proxy Setup (Eric)
 + Basic Spatial Joins (Eric)
     + What joins could we do?
     + Count 311 requests by borough
